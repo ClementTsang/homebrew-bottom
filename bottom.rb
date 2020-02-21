@@ -7,7 +7,7 @@ class Bottom < Formula
 
   def install
     bin.install "btm"
-    system "mkdir -p ~/.config/btm"
-    system "cp btm.toml ~/.config/btm"
+    ohai "You're done!  Run with \"btm\""
+    ohai "If you want to configure bottom, by default bottom looks for a btm.toml file in ~/.config/btm/"
   end
 end
