@@ -7,7 +7,7 @@ class Bottom < Formula
 
   def install
     bin.install "btm"
-    system "mkdir -p" "~/.config/btm"
+    system "mkdir -p ~/.config/btm"
     system "cp" "btm.toml" "~/.config/btm"
   end
 end
