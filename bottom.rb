@@ -1,9 +1,9 @@
 class Bottom < Formula
   desc "A cross-platform graphical process/system monitor with a customizable interface and a multitude of features."
   homepage "https://github.com/ClementTsang/bottom"
-  url "https://github.com/ClementTsang/bottom/releases/download/0.4.2/bottom_x86_64-apple-darwin.tar.gz"
-  sha256 "212cf33dc08fdaca1fa63f87603187ab89e2ba64ec6d32d401ca790bc71062f5"
-  version "0.4.2"
+  url "https://github.com/ClementTsang/bottom/releases/download/0.4.3/bottom_x86_64-apple-darwin.tar.gz"
+  sha256 "f874eea08a1706f27e6df247f9a3c5e50b9332e3cd11557f8962313a38fb651f"
+  version "0.4.3"
 
   def install
     bin.install "btm"
