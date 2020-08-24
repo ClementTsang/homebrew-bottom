@@ -1,19 +1,20 @@
 class Bottom < Formula
-  desc "A cross-platform graphical process/system monitor with a customizable interface and a multitude of features."
-  homepage "https://github.com/ClementTsang/bottom"
-  version "0.4.5"
-  if OS.mac?
-    url "https://github.com/ClementTsang/bottom/releases/download/#{version}/bottom_x86_64-apple-darwin.tar.gz"
-    sha256 "966dbd50954714bf2e904f882fe4e3da5c284095e5f89b1e4eba6aa7ed9e8c63"
-  elsif OS.linux?
-    url "https://github.com/ClementTsang/bottom/releases/download/#{version}/bottom_x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "b635a5f834e300ee207733b42946b4dc96fb1d43e477d47eaf5ba97601d26d7d"
+    desc "A cross-platform graphical process/system monitor with a customizable interface and a multitude of features."
+    homepage "https://github.com/ClementTsang/bottom"
+    version "0.4.5-1"
+    if OS.mac?
+      url "https://github.com/ClementTsang/bottom/releases/download/#{version}/bottom_x86_64-apple-darwin.tar.gz"
+      sha256 "183dfeaece38b84f3255780c96bbd3f5c0793ce207368d91495dafdd35bc1bb6"
+    elsif OS.linux?
+      url "https://github.com/ClementTsang/bottom/releases/download/#{version}/bottom_x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "116ca85f64c73ff591ecb46bdd2a966c0b966d83eb33dc2394c5f3656df2135c"
+    end
+  
+    def install
+      bin.install "btm"
+      ohai "You're done!  Run with \"btm\""
+      ohai "For runtime flags, see \"btm --help\""
+      ohai "If you want to configure bottom, by default bottom looks for a file in $HOME/.config/bottom/bottom.toml"
+    end
   end
   
-  def install
-    bin.install "btm"
-    ohai "You're done!  Run with \"btm\""
-    ohai "For runtime flags, see \"btm --help\""
-    ohai "If you want to configure bottom, by default bottom looks for a file in $HOME/.config/bottom/bottom.toml"
-  end
-end
