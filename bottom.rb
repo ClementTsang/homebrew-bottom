@@ -11,8 +11,8 @@ class Bottom < Formula
     end
   
     def install
-      bash_completion.install "completion/rg.bash"
-      zsh_completion.install "completion/_rg"
+      bash_completion.install "completion/btm.bash"
+      zsh_completion.install "completion/_btm"
       bin.install "btm"
       ohai "You're done!  Run with \"btm\""
       ohai "For runtime flags, see \"btm --help\""
