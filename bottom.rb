@@ -1,18 +1,18 @@
 class Bottom < Formula
     desc "A cross-platform graphical process/system monitor with a customizable interface and a multitude of features."
     homepage "https://github.com/ClementTsang/bottom"
-    version "0.5.0"
+    version "0.5.1"
     if OS.mac?
       url "https://github.com/ClementTsang/bottom/releases/download/#{version}/bottom_x86_64-apple-darwin.tar.gz"
-      sha256 "0775accdf7326167b918429aa7e14c7117a90a7061e97be2f8940950608f51d2"
+      sha256 "edbba4ec0aac3d00d3ea0794dedf5f63be459db1999e415ad0fbb9825085cd30"
     elsif OS.linux?
       url "https://github.com/ClementTsang/bottom/releases/download/#{version}/bottom_x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "75557a2ee61b0f858d66620140198d87c082a62c0a8867dedb20ea2d57ad3fbd"
+      sha256 "e74a4a92a7539ef8f0ec16d0fa06090c1e85fb1717682861222b1b57d8ae2e00"
     end
   
     def install
       bash_completion.install "completion/btm.bash"
-      zsh_completion.install "completion/_btm"
+      zsh_completion.install "completion/_rg"
       bin.install "btm"
       ohai "You're done!  Run with \"btm\""
       ohai "For runtime flags, see \"btm --help\""
