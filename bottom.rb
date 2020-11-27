@@ -4,10 +4,10 @@ class Bottom < Formula
     version "0.5.3"
     if OS.mac?
       url "https://github.com/ClementTsang/bottom/releases/download/#{version}/bottom_x86_64-apple-darwin.tar.gz"
-      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+      sha256 "a426a96e73aa5190165e06897820f17ff84af830f868e27c0253b947c0d1f021"
     elsif OS.linux?
       url "https://github.com/ClementTsang/bottom/releases/download/#{version}/bottom_x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+      sha256 "f434897d9bc0b5db8aea7a7fe4e2aab4790715d8871317c3e9912e4520cbbfa9"
     end
   
     def install
