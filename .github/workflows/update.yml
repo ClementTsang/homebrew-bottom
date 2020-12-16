@@ -17,3 +17,4 @@ jobs:
           title: "Automatic homebrew update to ${{ github.event.client_payload.version }}"
           body: "This is an automatic update to the homebrew files in response to a bottom release, version ${{ github.event.client_payload.version }}."
           branch: update_branch
+          delete-branch: true
