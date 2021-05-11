@@ -22,10 +22,12 @@ jobs:
       - name: Check (macOS)
         if: matrix.os == 'macOS-latest'
         run: |
-          brew install --build-from-source ./bottom.rb;
+          brew install --verbose ./bottom.rb;
+          btm -V;
 
       - name: Check (Linux)
         if: matrix.os == 'ubuntu-18.04'
         run: |
           /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
-          brew install --build-from-source ./bottom.rb;
+          brew install --verbose ./bottom.rb;
+          btm -V;
