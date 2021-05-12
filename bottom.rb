@@ -1,13 +1,13 @@
 class Bottom < Formula
     desc "A cross-platform graphical process/system monitor with a customizable interface and a multitude of features."
     homepage "https://github.com/ClementTsang/bottom"
-    version "0.6.0"
+    version "0.6.1"
     if OS.mac?
       url "https://github.com/ClementTsang/bottom/releases/download/#{version}/bottom_x86_64-apple-darwin.tar.gz"
-      sha256 "81bf62ffd7cbaca4573bd5b1c5d4a75db1c740f28ead628faa2df2f2c6c0d317"
+      sha256 "9d3a25d3123bffd5f050f7ad3ee07c6f373eb98922784124848524849d4674ba"
     elsif OS.linux?
       url "https://github.com/ClementTsang/bottom/releases/download/#{version}/bottom_x86_64-unknown-linux-musl.tar.gz"
-      sha256 "f4dba615118ea1238e5c61c67b4475a4d00bb2518e7eb1f0c2dcbbfac72e4532"
+      sha256 "b20df11479df9c60959dc28df3a2892d289d11facd96319a1be23c2aefa6bb52"
     end
   
     def install
@@ -22,9 +22,11 @@ class Bottom < Formula
 
     def caveats
       <<~EOS
-        Note that bottom may require elevated privileges to correctly display information for all processes.
-        You can do this with `sudo btm`.
+        Note that bottom might require elevated privileges to correctly display information for all processes. You
+        probably won't need it though, there are built-in methods to avoid this need.
+        If you find you really do need it, you can do this with `sudo btm`.
         You should be certain that you trust any software you grant root privileges.
       EOS
     end 
   end
+  
