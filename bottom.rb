@@ -1,13 +1,13 @@
 class Bottom < Formula
     desc "A cross-platform graphical process/system monitor with a customizable interface and a multitude of features."
     homepage "https://github.com/ClementTsang/bottom"
-    version "0.6.3"
+    version "0.6.4"
     if OS.mac?
       url "https://github.com/ClementTsang/bottom/releases/download/#{version}/bottom_x86_64-apple-darwin.tar.gz"
-      sha256 "409bf35a9f4527ab1525ba711417d21a588bf6d1d3d5db4c5496fc47d56c642a"
+      sha256 "ab1e09b134d815c5ab0cfe5bbf010510af71905cee682549c6d72fe51f7f4ef2"
     elsif OS.linux?
       url "https://github.com/ClementTsang/bottom/releases/download/#{version}/bottom_x86_64-unknown-linux-musl.tar.gz"
-      sha256 "e8bdd8bc1b796299c92974b6ded7d1b5553a1528670f18af54c4fefcc1a9313a"
+      sha256 "56e37164670dd5918d1db6682cc77e0a01cfc6c834f726c724a1d9436720c55a"
     end
   
     def install
