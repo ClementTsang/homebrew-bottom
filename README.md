@@ -2,7 +2,7 @@
 
 ---
 
-This repo is now archived and won't get updates - bottom is [officially available on homebrew](https://github.com/Homebrew/homebrew-core/blob/master/Formula/bottom.rb), so there isn't really any need for this repo anymore.
+**This repo is now archived and will not get updates anymore - bottom is [officially available on homebrew](https://github.com/Homebrew/homebrew-core/blob/master/Formula/bottom.rb), so there isn't really any need for this repo anymore.**
 
 ---
 
