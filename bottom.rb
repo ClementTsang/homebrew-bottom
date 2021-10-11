@@ -1,4 +1,6 @@
 class Bottom < Formula
+    disable! date: "2021-10-10", because: "is now in Homebrew Core - please reinstall with:\nbrew untap clementtsang/bottom\nbrew install bottom\nThanks"
+
     desc "A cross-platform graphical process/system monitor with a customizable interface and a multitude of features."
     homepage "https://github.com/ClementTsang/bottom"
     version "0.6.4"

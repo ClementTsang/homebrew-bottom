@@ -10,8 +10,10 @@ on:
 jobs:
   # Checks install
   install:
+    continue-on-error: true
     runs-on: ${{ matrix.os }}
     strategy:
+      fail-fast: false
       matrix:
         os:
           - ubuntu-18.04
